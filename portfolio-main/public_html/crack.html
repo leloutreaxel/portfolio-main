@@ -193,24 +193,79 @@ sudo wifite
 
 
                     <h4 class="post-content-title mb-3"><span style="color: #CC0000"><u>2. Attaque par Force Brute sur une Base de Données</u></span></h4>
-                                <span class="fas fa-chevron-right mr-2"></span> 📌 Utilisation des outils collaboratifs (Google Drive, Microsoft Teams, etc.)<br>
-                                <span class="fas fa-chevron-right mr-2"></span> 📌 Gestion des e-mails et des réseaux sociaux de manière professionnelle <br>
-                                <span class="fas fa-chevron-right mr-2"></span> 📌 Règles de communication numérique et cybercourtoisie <br>
+                    <p class="mb-4">
+                      Outil utilisé : Hydra (super utile pour tester des mots de passe sur différents services).
+</p>
+                        Ce qu’on a fait : <br> <br>
+
+
+                                 1° On avait une base de données MySQL accessible sur une machine distante à l’adresse 192.168.1.100.<br><br>
+                                 2° Objectif : trouver les identifiants utilisateur grâce à une attaque par force brute. <br><br>
+                                 3° Commande utilisée :<br><br>
+
+                                 <title>Bloc Bash</title>
+                            <style>
+                              pre {
+                                    margin: 0;
+                                    padding: 1px;
+                                    background-color: #282c34;
+                                    border-radius: 1px;
+                                    overflow-x: auto;
+                                    position: relative;
+                                    color: #f7f8fa;
+
+                                  }
+                            </style>
                             
+                         <div class="bash-container">
+                             <div class="bash-header">bash</div>
+                             <button class="copy-btn" onclick="copyCode()">📋 Copier</button>
+                             <pre><code id="bash-code">
+hydra -L /path/to/userlist -P /path/to/passwordlist -e nsr -t 4 -s 3306 -f 192.168.1.100 mysql
 
-                     <h4 class="post-content-title mb-3"><span style="color: #CC0000"><u>3. Sécurité et protection des données</u></span></h4>
-                     <span class="fas fa-chevron-right mr-2"></span> 🔒 Gestion des mots de passe et authentification sécurisée <br>
-                     <span class="fas fa-chevron-right mr-2"></span> 🛡️ Protection contre le phishing et les cyberattaques <br>
-                     <span class="fas fa-chevron-right mr-2"></span> 📌 Respect du RGPD et des règles de confidentialité <br>
+                              
+                             </code></pre>
+                         </div>
+                     
+                         <script>
+                             function copyCode() {
+                                 const codeElement = document.getElementById("bash-code");
+                                 const textArea = document.createElement("textarea");
+                                 textArea.value = codeElement.innerText;
+                                 document.body.appendChild(textArea);
+                                 textArea.select();
+                                 document.execCommand("copy");
+                                 document.body.removeChild(textArea);
+                                 alert("Code copié !");
+                             }
+                         </script>
+                            <br><br>
+
+                     <h4 class="post-content-title mb-3"><span style="color: #CC0000"><u>Explications des options :</u></span></h4>
+                     <span class="fas fa-chevron-right mr-2"></span> -L /path/to/userlist : Fichier contenant une liste de noms d’utilisateur à tester. <br>
+                     <span class="fas fa-chevron-right mr-2"></span> -P /path/to/passwordlist : Liste de mots de passe possibles. <br>
+                     <span class="fas fa-chevron-right mr-2"></span> -e nsr : Teste les variantes comme aucun mot de passe ou un seul caractère. <br>
+                     <span class="fas fa-chevron-right mr-2"></span> -t 4 : Utilise 4 threads pour accélérer l’attaque. <br>
+                     <span class="fas fa-chevron-right mr-2"></span> -s 3306 : Spécifie le port cible (3306 pour MySQL). <br>
+                     <span class="fas fa-chevron-right mr-2"></span> -f : Arrête l’attaque dès qu’il trouve une combinaison valide. <br>
+                     <span class="fas fa-chevron-right mr-2"></span> 192.168.1.100 mysql : Adresse de la base de données et protocole utilisé. <br> <br>
+                     Résultat : <br> <br>
+
+                     <p class="mb-4">
+                      Hydra a trouvé les identifiants valides. Ce test montre l’importance d’utiliser des mots de passe complexes et de limiter les accès distants à une base de données.
+</p>
 
 
-                     <h4 class="post-content-title mb-3"><span style="color: #CC0000"><u>4. Création de contenu numérique</u></span></h4>
-                     <span class="fas fa-chevron-right mr-2"></span> 📌 Utilisation des logiciels bureautiques et multimédias <br>
-                     <span class="fas fa-chevron-right mr-2"></span> 📌 Programmation de base et automatisation des tâches<br>
-                     <span class="fas fa-chevron-right mr-2"></span> 📌 Maîtrise des formats et droits d’utilisation des contenus <br>
+                     <h4 class="post-content-title mb-3"><span style="color: #CC0000"><u>Conclusion</u></span></h4>
+                     <p class="mb-4">
+                      Ce projet nous a permis de mieux comprendre deux choses :</p>
+                     Le WEP, c’est dépassé. Si on veut un réseau sécurisé, il faut utiliser WPA2 ou WPA3. <br><br>
+                     Les mots de passe faibles, c’est risqué. En production, il faut des mots de passe longs, aléatoires et limiter les accès à des IP précises.<br><br>
+                     <p class="mb-4">
+                      Grâce à ces exercices, on a vu comment ces failles peuvent être exploitées, mais aussi comment s’en protéger efficacement.</p>
                      
 
-                    <h3 class="post-content-title mb-3"><u>Ma progression</u> </h3>
+                    <!-- <h3 class="post-content-title mb-3"><u>Ma progression</u> </h3>
 
                     <span class="fas fa-chevron-right mr-2"></span> ✔ Amélioration de mes compétences numériques <br>
                     <span class="fas fa-chevron-right mr-2"></span> ✔ Certification obtenue avec un score validant mon niveauontenus <br>
@@ -219,7 +274,7 @@ sudo wifite
 
                                                     <div class="single-post-image mb-4">
                                         <img src="assets/images/resucnil.png" class="img-fluid w-100 radius-image" alt="image">
-                              </div>
+                              </div> -->
             </div>
           </div>
         </div>
