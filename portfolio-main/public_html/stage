@@ -1,28 +1,30 @@
-Rapport de Stage chez MaxInfoWeb
+<!--Stage Section-->
+    <section class="section" id="stage">
+        <div class="container">
+            <h2 class="mb-5">Rapport de <span class="text-danger">Stage</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Stage MaxInfoWeb</h6>
 
-Introduction
-Durant ma période de stage au sein de l'entreprise MaxInfoWeb située à Neuilly-en-Thelle (Oise), j'ai eu l'opportunité d'acquérir des compétences techniques et professionnelles dans le domaine de l'informatique. Ce stage m'a permis de découvrir le fonctionnement d'une entreprise spécialisée dans l'installation, la maintenance et la réparation de systèmes informatiques.
+                        <p class="post-details">
+                            <a href="#">Fait par : Leloutre Axel</a>
+                            <!-- <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a> -->
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
 
-Présentation de l'entreprise
-MaxInfoWeb est une entreprise spécialisée dans les services informatiques, allant de l'installation de matériel à la gestion des réseaux et de la téléphonie. Son objectif est d'apporter un support complet à ses clients pour garantir le bon fonctionnement de leur infrastructure informatique.
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
 
-Missions effectuées
-Durant mon stage, j'ai eu l'occasion de réaliser plusieurs missions :
+                        <a href="veille.html" class="read-more">En savoir plus  <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
 
-Installation de systèmes informatiques : Mise en place et configuration de postes de travail (PC, Mac), serveurs et téléphones professionnels.
-
-Maintenance et mise à jour de logiciels et systèmes : Installation et mise à jour de Windows, Chrome OS, macOS et Office 365 pour garantir une performance optimale.
-
-Réparation de matériel informatique : Diagnostic des pannes, remplacement de composants défectueux et nettoyage du matériel.
-
-Configuration de réseaux et téléphonie : Mise en place de VPN, configuration de firewalls, installation et gestion de systèmes téléphoniques (Yeastar, Grandstream) et gestion de machines virtuelles sous Proxmox.
-
-Support technique : Assistance aux clients via appels téléphoniques et interventions à distance pour le dépannage et la résolution de problèmes.
-
-Gestion de stock et organisation : Inventaire et gestion des composants informatiques, répartition des équipements selon les besoins des clients.
-
-Compétences acquises
-Ce stage m'a permis d'améliorer mes compétences techniques en informatique, notamment en maintenance et en gestion de réseaux, mais aussi d'acquérir des compétences en communication et en gestion des relations clients.
-
-Conclusion
-L'expérience acquise chez MaxInfoWeb a été très enrichissante et m'a conforté dans mon choix de carrière dans le domaine de l'informatique. J'ai pu travailler sur des missions variées et développer des compétences essentielles pour mon avenir professionnel.
+            </div>
+        </div>
+    </section>
